@@ -13,7 +13,7 @@ switch (elegirMoneda) {
             alert("Real oficial - Compra: $28  |  Venta: $32")
             break;
     default:
-        alert("ERROR")
+        alert("Error: Por favor, ingrese DOLAR, EURO o REAL")
     break;
     }
 
