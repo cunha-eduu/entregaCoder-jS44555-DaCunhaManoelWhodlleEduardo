@@ -24,14 +24,10 @@ const tipoMonedaArray = [
     {
         tipoMoneda: "dolar",
         dolarUsCompra: 164,
-        dolarUsVenta: 172
-    },
-    {
+        dolarUsVenta: 172,
         tipoMoneda: "euro",
         euroEuCompra: 178,
-        euroEuVenta: 179
-    },
-    {
+        euroEuVenta: 179,
         tipoMoneda: "real",
         realBrCompra: 28,
         realBrVenta: 32
@@ -39,10 +35,9 @@ const tipoMonedaArray = [
 
 ]
 
-for (let i = 0; i < tipoMonedaArray.length; i++) {
-    
-    function cotizador(compraVenta, montoIngresado) {
+function cotizador(array) {
 
+for (let i = 0; i < array.length; i++) {
         //DOLAR
         if (compraVenta === "vender" && montoIngresado  >= 0 && elegirMoneda === "dolar") {
             return  "El total a recibir es: $" + montoIngresado * tipoMonedaArray[i].dolarUsCompra + " pesos argentinos"
@@ -65,11 +60,9 @@ for (let i = 0; i < tipoMonedaArray.length; i++) {
             return "Error: Por favor, ingrese un valor válido"
         }
     }
-
-    if (elegirMoneda === tipoMonedaArray[i].tipoMoneda) {
-        alert(cotizador(compraVenta, montoIngresado))
-    } 
-    
 }
+
+    alert(cotizador(compraVenta, montoIngresado))
+
 
 
