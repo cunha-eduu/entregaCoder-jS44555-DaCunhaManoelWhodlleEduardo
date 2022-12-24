@@ -9,7 +9,7 @@ let cotizadora = document.querySelector(".boton__cotizar")
 
 cotizadora.onclick = ( event )  => {
   event.preventDefault()
-  var elegirMoneda = prompt("¿Qué moneda usted quiere cambiar?").toLocaleLowerCase();
+  var elegirMoneda = prompt("¿Qué moneda usted quiere cambiar?\rDOLAR, EURO o REAL").toLocaleLowerCase();
 
   switch (elegirMoneda) {
     case "dolar":

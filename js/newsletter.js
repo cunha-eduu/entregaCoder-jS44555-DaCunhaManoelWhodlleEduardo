@@ -6,7 +6,7 @@ let newsletter = []
 
 
 const newsletterAHTML = ( array ) => {
-    const contenedorNotas = document.querySelector(".contenedor-newsLetter")
+    const contenedorNotas = document.querySelector(".contenedor__newsletter")
 
     const arrReducido = array.reduce( (acc, element) => {
         return acc + `

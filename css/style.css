@@ -101,14 +101,14 @@ em strong{
     color: rgb(0, 70, 44);
 }
 
-.servicios, .cotizacion, .newsletter {
+.servicios, .cotizacion, .newsletter, .contenedor__newsletter {
     background: rgb(0, 70, 44);
-    padding: 30px;
+    padding: 20px;
     color: whitesmoke;
-    border: 2px solid white;
     flex-direction: column;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 .servicios{
     flex-direction: column;
@@ -122,7 +122,7 @@ em strong{
 
 .servicios {
     background-color: whitesmoke;
-    color: rgb(0, 6, 70);
+    color:  rgb(0, 70, 44);
 }
 .titulo {
     text-align: center;
@@ -133,7 +133,7 @@ em strong{
     display: inline-block;
     vertical-align: top;
     width: auto;
-    margin: 10px;
+    margin: 0;
     padding: 20px;
     line-height: 1.5em;
     list-style-type: circle;
@@ -165,11 +165,12 @@ em strong{
     height: 20px;
 }
 
-footer {
+.footer {
     margin: 0;
     padding: 10px;
     font-size: 1rem;
     color: whitesmoke;
+    background-color: black;
     text-align: center;
 }
 
