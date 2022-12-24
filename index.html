@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>United Exchange</title>
-  </head>
-  <body>
+</head>
+<body>
+    <header>
+        <h1 class="titulo__principal">United Exchange</h1>
+    </header>
+
+    <img src="./img/banner.png" alt="Banner United Exchange" class="banner">
+
+    <div class="principal">
+        <h2 class="principal__h2"><strong>Bienvenido(a) a United Exchange</strong> </h2>
+        <p class="parrafo__introductorio"><strong>United Exchange</strong> trae para el mercado finaciero confianza, innovación y  tecnología. Fundada en 2015, la <strong>United Exchange</strong> impresiona por .</p>
+    
+        <p class="parrafo__mision"><em>Nuestra misión es: <strong>"Democratizar el cambio, recibimiento y envío de moneda extranjera en todo el país"</strong>.</em></p>
+    
+        <p>Brindamos una variedad enorme de servicios disiñados para cada tipo de cliente</p>
+    </div>
+
+    <div class="cotizacion"> 
+        <h2 class="titulo">United Exchange - Cotizacion Hoy</h2>
+        <p>En United Exchange usted puede cotizar DOLAR, EURO o REAL</p>
+        <button class="boton__cotizar"> Cotizar </button>
+    </div>
+
+    <div class="servicios"> 
+        <h2 class="titulo">United Exchange - Nuestros Servicios</h2>
+        <ul class="items__lista">
+            <li>Compra y Venta de Dólares, Euros y Reales</li>
+            <li>Cambio en Efectivo, Tarjeta de Crédito o Débito, Transferencia</li>
+            <li>Envío y Recibiminto de Dinero con las menores tazas del mercado </li>
+            <li>Tarjeta de Viaje en Dólares, Euros y Reales</li>
+            <li>Caja de Ahorro en Dólares en EEUU</li>
+        </ul>
+    </div>
+
+    <div class="newsletter"> 
+        <h2 class="titulo">United Exchange - Suscribirse a nuestra NewsLetter</h2>
+        <form class="form-newsletter">
+            <label>
+                <input type="text" id="input-nombre" placeholder="Nombre" class="newsletter__field">
+            </label>
+            <label>
+                <input type="email" id="input-email" placeholder="Email" class="newsletter__field"> 
+            </label>
+            <label>
+                <input type="submit" value="Enviar" class="boton__enviar">
+            </label>
+        </form>
+<footer class="footer">
+        <p class="footer__p1">
+            <span class="footer__p1__nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="footer__p1__nowrap">United Exchange</span>
+        </p>
+</footer>
+
     <script src="./js/main.js"></script>
-  </body>
+    <script src="./js/newsletter.js"></script>
+</body>
 </html>
