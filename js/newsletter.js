@@ -2,11 +2,12 @@ const formNewsletter = document.querySelector(".form-newsletter")
 const inputNombre = document.querySelector("#input-nombre")
 const inputEmail = document.querySelector("#input-email")
 
+
 let newsletter = []
 
 
 const newsletterAHTML = ( array ) => {
-    const contenedorNotas = document.querySelector(".contenedor__newsletter")
+    const contenedorNewsLetter = document.querySelector(".contenedor__newsletter")
 
     const arrReducido = array.reduce( (acc, element) => {
         return acc + `
@@ -16,7 +17,7 @@ const newsletterAHTML = ( array ) => {
         `
     }, "")
 
-    contenedorNotas.innerHTML = arrReducido
+    contenedorNewsLetter.innerHTML = arrReducido
 }
 
 formNewsletter.onsubmit = ( event )  => {
@@ -24,6 +25,8 @@ formNewsletter.onsubmit = ( event )  => {
     if(inputNombre.value === "" || inputEmail === ""){
         alert("Por favor, Complete los campos para poder enviar el formulario")
     } else {
+        localStorage.setItem("name", inputNombre.value)
+        localStorage.setItem("email", inputEmail.value)
         newsletter.push({
             nombre: inputNombre.value,
             email: inputEmail.value
@@ -33,6 +36,3 @@ formNewsletter.onsubmit = ( event )  => {
         newsletterAHTML(newsletter)
     }
 }
-
-
-
